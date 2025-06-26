@@ -173,10 +173,10 @@ strong {
 }
 
 /*---------------------------------------
-  NEWS SECTION               
+  SERVICES SECTION               
 -----------------------------------------*/
 
-.news-description {
+.services-description {
   width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -187,37 +187,37 @@ strong {
   padding-bottom: 50px;
 }
 
-.news-combined-title {
+.services-combined-title {
   font-size: 50px;
   font-weight: 700;
   font-family: "Outfit", sans-serif;
 }
 
 .avatar-group,
-.news-group {
+.services-group {
   position: relative;
   z-index: 22;
 }
 
-.news-group {
+.services-group {
   display: inline-block;
   vertical-align: top;
 }
 
-.news-group strong {
+.services-group strong {
   font-size: var(--h3-font-size);
   margin-right: 10px;
 }
 
-.news-section .container {
+.services-section .container {
   overflow: visible;
 }
 
-.news-section .row {
+.services-section .row {
   overflow: visible;
 }
 
-.news-grid {
+.services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -849,15 +849,30 @@ body.banner-hidden .top-info-bar {
   CUSTOM BLOCK              
 -----------------------------------------*/
 .custom-block {
-  display: block;
+  background-image: url("../images/website_assets/images/service_tile_5.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white; /* ensure text stays readable */
+  overflow: hidden;
   background-color: var(--intense-care-color);
   border-radius: var(--border-radius-medium);
-  padding-top: 80px;
   text-align: center;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  overflow: visible;
   margin-bottom: 30px;
+  min-height: 200px;
+}
+
+.custom-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(53, 167, 98, 0.8); /* your green overlay */
+  z-index: 1;
+  border-radius: var(--border-radius-medium); /* match card rounding */
 }
 
 .custom-block .avatar-image {
@@ -888,8 +903,16 @@ body.banner-hidden .top-info-bar {
 }
 
 .custom-block-info {
-  padding: 30px 20px 40px;
+  position: relative;
+  z-index: 2;
+  /* padding: 30px 20px 40px; */
+  padding: 2rem;
   color: var(--white-color);
+}
+
+.custom-block-info > * {
+  position: relative;
+  z-index: 2;
 }
 
 .custom-block-info strong,

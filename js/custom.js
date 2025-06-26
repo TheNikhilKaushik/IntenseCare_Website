@@ -7,20 +7,20 @@
   });
 
   // CUSTOM LINK
-  $(".smoothscroll").click(function () {
+  $(".smoothscroll, .click-scroll").click(function (e) {
     var el = $(this).attr("href");
     var elWrapped = $(el);
     var header_height = $(".navbar").height();
 
     scrollToDiv(elWrapped, header_height);
-    return false;
+    e.preventDefault();
 
     function scrollToDiv(element, navheight) {
       var offset = element.offset();
       var offsetTop = offset.top;
       var totalScroll = offsetTop - navheight;
 
-      $("body,html").animate(
+      $("html, body").animate(
         {
           scrollTop: totalScroll
         },
@@ -38,3 +38,5 @@
     }
   });
 })(window.jQuery);
+
+

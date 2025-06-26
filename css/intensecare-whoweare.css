@@ -941,16 +941,25 @@ body.banner-hidden .top-info-bar {
   text-align: justify;
 }
 
-.ndis-support-section img {
+.ndis-support-section .img-fluid {
   border-radius: 30px;
   object-fit: cover;
   width: 100%;
-  height: 350px;
+  height: 500px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
+.ndis-divider {
+  border: none;
+  height: 7px; /* thickness */
+  background-color:  var(--intense-care-color);
+  /* background-color:  black; */
+  margin: 40px 0; /* space above and below */
+  opacity: 1;  
+}
+
 .ndis-support-info {
-  padding-top: 40px;
+  /* padding-top: 40px; */
   padding-right: 40px;
   padding-left: 40px;
 }

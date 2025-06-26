@@ -1071,7 +1071,8 @@ body.banner-hidden .top-info-bar {
 }
 
 .contact-section {
-  background: var(--custom-btn-bg-color);
+  /* background: var(--custom-btn-bg-color); */
+  /* color: var(--intense-care-color); */
   overflow: hidden;
 }
 
@@ -1086,6 +1087,40 @@ body.banner-hidden .top-info-bar {
 
 .contact-link {
   color: var(--white-color);
+  position: relative;
+  padding-left: 24px; /* space for icon */
+  display: inline-block;
+}
+
+.contact-link::before {
+  /* content: "\2709"; */
+  /* content: "\260E";  */
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white-color);
+  -webkit-font-smoothing: antialiased; /* make it light and crisp */
+}
+
+.contact-phone {
+  color: var(--white-color);
+  position: relative;
+  padding-left: 24px; /* space for icon */
+  display: inline-block;
+}
+
+.contact-phone::before {
+  /* content: "\2709"; */
+  /* content: "\260E";  */
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white-color);
+  -webkit-font-smoothing: antialiased; /* make it light and crisp */
 }
 
 .contact-section .copyright-text {
@@ -1093,18 +1128,15 @@ body.banner-hidden .top-info-bar {
 }
 
 /*---------------------------------------
-  EBOOK DOWNLOAD FORM               
+  CONTACT US FORM               
 -----------------------------------------*/
-.ebook-download-form {
+.contact-us-form {
   border-radius: var(--border-radius-medium);
   position: relative;
   z-index: 2;
   padding: 50px;
 }
 
-/*---------------------------------------
-  CUSTOM FORM               
------------------------------------------*/
 .custom-form .form-control {
   border-radius: var(--border-radius-large);
   box-shadow: none;
@@ -1114,6 +1146,15 @@ body.banner-hidden .top-info-bar {
   padding-right: 40px;
   padding-left: 20px;
   outline: none;
+  border-color: var(--primary-color);
+}
+
+.contact-us-right-side {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  background: var(--intense-care-color);
 }
 
 .custom-form .form-control:focus,
@@ -1245,12 +1286,13 @@ body.banner-hidden .top-info-bar {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
+  border-color: var(--primary-color);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
   display: block;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   text-align: center;
   width: 35px;
   height: 35px;
