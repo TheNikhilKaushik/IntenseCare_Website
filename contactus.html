@@ -71,10 +71,10 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-lg-auto me-lg-4">
-                        <a class="nav-link nav-item click-scroll" href="#home">Home</a>
+                        <a class="nav-link nav-item click-scroll" href="index.html">Home</a>
                         <a class="nav-link nav-item click-scroll" href="who_we_are.html">Who we are</a>
                         <a class="nav-link nav-item click-scroll" href="what_we_offer.html">What we offer</a>
-                        <a class="nav-link nav-item click-scroll" href="contactus.html">Get in touch</a>
+                        <a class="nav-link nav-item click-scroll" href="#section_5">Get in touch</a>
                         <a></a>
                     </ul>
                 </div>
@@ -98,50 +98,42 @@
         <section class="contact-section section-padding" id="section_5">
             <div class="container">
                 <div class="row">
-
+                    <!-- https://formsubmit.co/19880fa5e1d03fd86c12aca2a1842736 -->
                     <div class="col-lg-5 col-12 mx-auto">
                         <!-- <div class="col-lg-6 col-12 mx-auto"> -->
-                        <form class="custom-form contact-us-form bg-white shadow" action="#" method="post" role="form">
+                        <form id="contact-form" class="custom-form contact-us-form bg-white shadow"
+                            action="https://formsubmit.co/19880fa5e1d03fd86c12aca2a1842736" method="POST">
+
+                            <!-- Anti-spam honeypot -->
+                            <input type="text" name="_formsubmit_id" style="display:none">
+
+                            <!-- Prevent redirect -->
+                            <input type="hidden" name="_redirect" value="none">
+                            <input type="hidden" name="_template" value="table">
 
                             <div class="form-body">
                                 <div class="input-group mb-4">
-                                    <input type="text" name="form-name" id="form-name" class="form-control"
-                                        aria-label="form-name" aria-describedby="basic-addon1" placeholder="Your Name"
-                                        required>
-
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <i class="custom-form-icon bi-person"></i>
-                                    </span>
+                                    <input type="text" name="name" id="form-name" class="form-control"
+                                        placeholder="Your Name" required>
+                                    <span class="input-group-text"><i class="custom-form-icon bi-person"></i></span>
                                 </div>
 
                                 <div class="input-group mb-4">
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                        class="form-control" placeholder="your@email.com" aria-label="form-email"
-                                        aria-describedby="basic-addon2" required="">
-
-                                    <span class="input-group-text" id="basic-addon2">
-                                        <i class="custom-form-icon bi-envelope"></i>
-                                    </span>
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        pattern="[^ @]*@[^ @]*" placeholder="your@email.com" required>
+                                    <span class="input-group-text"><i class="custom-form-icon bi-envelope"></i></span>
                                 </div>
 
                                 <div class="input-group mb-4">
-                                    <input type="tel" name="phone" id="email" pattern="[0-9]{10}" class="form-control"
-                                        placeholder="0XXX XXX XXX" aria-label="form-phone"
-                                        aria-describedby="basic-addon2" required="">
-
-                                    <span class="input-group-text" id="basic-addon3">
-                                        <i class="custom-form-icon bi-telephone"></i>
-                                    </span>
+                                    <input type="tel" name="phone" id="phone" class="form-control" pattern="[0-9]{10}"
+                                        placeholder="0123456789" required>
+                                    <span class="input-group-text"><i class="custom-form-icon bi-telephone"></i></span>
                                 </div>
 
                                 <div class="input-group mb-4">
-                                    <input type="text" name="form-query" id="form-query" class="form-control"
-                                        aria-label="form-query" aria-describedby="basic-addon1"
-                                        placeholder="What can we help you with?" required>
-
-                                    <span class="input-group-text" id="basic-addon4">
-                                        <i class="custom-form-icon bi-keyboard"></i>
-                                    </span>
+                                    <textarea name="message" class="form-control" placeholder="Your message or query"
+                                        rows="4" required></textarea>
+                                    <span class="input-group-text"><i class="custom-form-icon bi-keyboard"></i></span>
                                 </div>
 
                                 <div class="col-lg-8 col-md-10 col-8 mx-auto">
@@ -149,6 +141,27 @@
                                 </div>
                             </div>
                         </form>
+
+                        <!-- Success alert -->
+                        <div id="form-success-alert" class="alert alert-success text-center mt-4"
+                            style="display: none;">
+                            Thank you! Your message was sent successfully.
+                        </div>
+
+
+                        <!-- Success alert -->
+                        <div id="form-success-alert" class="alert alert-success text-center mt-4"
+                            style="display: none;">
+                            Thank you! Your message was sent successfully.
+                        </div>
+
+                        <!-- Success alert (hidden initially) -->
+                        <div id="form-success-alert" class="alert alert-success text-center mt-4"
+                            style="display: none;">
+                            Thank you! Your message was sent successfully.
+                        </div>
+
+
                     </div>
                     <span class="custom-block-separator visible-on-mobile">&nbsp;</span>
                     <div class="col-lg-5 col-12 shadow contact-us-right-side mx-auto">
@@ -277,26 +290,7 @@
     <script src="js/jquery.sticky.js"></script>
     <!-- <script src="js/click-scroll.js"></script> -->
     <script src="js/custom.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navbar = document.querySelector(".navbar");
-            const toggler = document.querySelector(".navbar-toggler");
-
-            // Scroll handler
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 20) {
-                    navbar.classList.add("is-scrolled");
-                } else {
-                    navbar.classList.remove("is-scrolled");
-                }
-            });
-
-            // Toggler expand handler
-            toggler.addEventListener("click", function () {
-                navbar.classList.toggle("expanded");
-            });
-        });
-    </script>
+    <script src="js/form-handler.js"></script>
 
 </body>
 

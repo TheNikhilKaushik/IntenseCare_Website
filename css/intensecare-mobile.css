@@ -266,6 +266,116 @@
 }
 
 @media screen and (max-width: 991px) {
+  .navbar-brand-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/website_assets/images/IntenseCare_logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .navbar-brand-icon::after {
+    display: none;
+  }
+
+  .btn-naira > span,
+  .btn-naira .btn-icon {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+
+  .navbar {
+    min-height: 48px !important;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 14px;
+  }
+
+  .sticky-wrapper {
+    top: 36px !important; /* match top-info-bar height */
+  }
+
+  .navbar,
+  .navbar.is-scrolled {
+    background-color: var(--primary-color);
+    height: auto !important;
+    min-height: 50px; /* Ensure it's tall enough */
+    transition: none;
+  }
+  .navbar-collapse {
+    background-color: var(--primary-color);
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    padding: 1rem;
+  }
+
+  .navbar .navbar-collapse {
+    top: 100%;
+    left: 0;
+    width: 100vw;
+  }
+
+  .navbar .nav-link {
+    color: white !important;
+    font-weight: 600;
+  }
+
+  .navbar-collapse .nav-link {
+    color: white !important;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .navbar-collapse .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-collapse .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    z-index: 1001; /* above menu */
+  }
+  .navbar-collapse.show .nav-link {
+    color: white !important;
+    font-weight: 600;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .sticky-wrapper {
+    height: auto !important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .navbar-collapse {
     background-color: var(--primary-color);
     width: 100vw;
@@ -465,7 +575,6 @@
 }
 
 @media screen and (max-width: 991px) {
-
   .contact-us-right-side {
     border-radius: var(--border-radius-medium);
     position: relative;
