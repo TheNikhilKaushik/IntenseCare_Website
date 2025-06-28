@@ -1,0 +1,325 @@
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    padding-bottom: 20px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+  }
+
+  .scrollspy-example-2 .scrollspy-example-item:first-child {
+    padding-top: 0;
+  }
+
+  .scrollspy-example-item h5 {
+    padding-bottom: 5px;
+  }
+
+  .ndis-support-info {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .ebook-download-form {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .navbar-brand {
+      font-size: var(--p-font-size);
+    }
+
+    .navbar-brand-icon {
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/website_assets/images/IntenseCare_logo.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 0;
+      background-color: transparent;
+    }
+
+    .navbar-brand-icon::after {
+      display: none;
+    }
+
+    .btn-naira > span,
+    .btn-naira .btn-icon {
+      font-size: 12px;
+      padding: 5px 15px;
+    }
+  }
+  .btn-naira > span,
+  .btn-naira .btn-icon {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sticky-wrapper {
+      top: 48px; /* same as height of .top-info-bar */
+    }
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .navbar-collapse.show .nav-link {
+    color: white !important;
+    font-weight: 600;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .sticky-wrapper {
+    height: auto !important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 100%;
+  }
+  .sticky-wrapper {
+    top: 48px !important; /* matches top-info-bar height */
+    z-index: 1000;
+  }
+
+  .is-sticky .navbar {
+    top: 0; /* inside wrapper, so this aligns properly */
+  }
+
+  .hero-section {
+    background-position: center center; /* ensure correct position on tablet */
+    min-height: 70vh;
+    padding-top: 180px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 767px) {
+    .section-with-navbar-offset {
+      padding-top: 120px;
+    }
+
+    .custom-block {
+      padding-top:10px;
+      padding: 1rem 1rem; 
+      margin-bottom: 1rem; 
+      border-radius: 16px;
+    }
+
+    .custom-block-info {
+      padding: 1rem 1rem 1rem; 
+      margin-bottom: 1rem;
+      border-radius: 16px;
+    }
+
+    .custom-block-info p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .custom-block-info strong {
+      font-size: 16px;
+    }
+
+    .custom-block-image-wrap {
+      width: 80px;
+      height: 80px;
+      /* margin: 0 auto; */
+      background-size: cover;
+      border-radius: 50%;
+      margin-bottom:20px;
+    }
+  }
+
+  .hero-title {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 24px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section .row {
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-section .container-fluid {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-buttons {
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    background-position: center center;
+    /* min-height: 90vh; more height for small phones */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow-x: hidden; /* <== prevent horizontal scroll */
+  }
+
+  .hero-section .row {
+    padding-left: 15px; /* smaller padding */
+    padding-right: 15px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 90%;
+    min-width: auto;
+    padding: 12px 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-section {
+    background-position: center center;
+    min-height: 90vh; /* increased for tiny screens */
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 90%;
+    min-width: auto;
+    padding: 12px 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .visible-on-mobile {
+    display: block !important;
+  }
+
+  .ndis-support-info {
+    margin-bottom: 30px;
+  }
+}
+
+.bi-telephone-fill .me-1 {
+  display: inline-block;
+  margin-right: 0.25rem;
+}

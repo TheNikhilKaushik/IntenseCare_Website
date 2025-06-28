@@ -54,22 +54,46 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// $(document).ready(function () {
-//   const $navbar = $(".navbar");
+$(document).ready(function () {
+  const $navbar = $(".navbar");
 
-//   // Get height of top-info-bar (or default to 48 if missing)
-//   const topInfoHeight =
-//     document.getElementById("top-info-bar")?.offsetHeight || 48;
+  // Get height of top-info-bar (or default to 48 if missing)
+  const topInfoHeight =
+    document.getElementById("top-info-bar")?.offsetHeight || 48;
 
-//   // Initialize sticky with dynamic topSpacing
-//   $navbar.sticky({
-//     topSpacing: topInfoHeight,
-//   });
+  // Initialize sticky with dynamic topSpacing
+  $navbar.sticky({
+    topSpacing: topInfoHeight,
+  });
 
-//   // Optionally: on window resize, update sticky spacing if needed
-//   $(window).on("resize", function () {
-//     const updatedTop =
-//       document.getElementById("top-info-bar")?.offsetHeight || 48;
-//     $(".sticky-wrapper").css("top", updatedTop + "px");
-//   });
-// });
+  // Optionally: on window resize, update sticky spacing if needed
+  $(window).on("resize", function () {
+    const updatedTop =
+      document.getElementById("top-info-bar")?.offsetHeight || 48;
+    $(".sticky-wrapper").css("top", updatedTop + "px");
+  });
+});
+
+/* --- Sticky offset adjustment below top-info-bar (mobile fix) --- */
+$(document).ready(function () {
+  const $navbar = $(".navbar");
+  const topInfoHeight = document.getElementById("top-info-bar")?.offsetHeight || 48;
+
+  // Sticky navbar offset to stay below top-info-bar
+  $navbar.sticky({
+    topSpacing: topInfoHeight
+  });
+
+  // Push sections down so they never appear behind sticky navbar
+  function adjustSectionSpacing() {
+    if (window.innerWidth < 992) {
+      const stickyHeight = $(".sticky-wrapper").outerHeight() || 60;
+      $("section").css("margin-top", stickyHeight + "px");
+    } else {
+      $("section").css("margin-top", "0px");
+    }
+  }
+
+  adjustSectionSpacing();
+  $(window).on("resize", adjustSectionSpacing);
+});

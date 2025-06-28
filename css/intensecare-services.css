@@ -849,7 +849,7 @@ body.banner-hidden .top-info-bar {
   CUSTOM BLOCK              
 -----------------------------------------*/
 .custom-block {
-  background-image: url("../images/website_assets/images/service_tile_5.jpg");
+  /* background-image: url("../images/website_assets/images/service_tile_5.jpg"); */
   background-size: cover;
   background-position: center;
   color: white; /* ensure text stays readable */
@@ -861,6 +861,12 @@ body.banner-hidden .top-info-bar {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
   min-height: 200px;
+}
+
+.custom-block-link {
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the <a> behave like a block-level element */
+  cursor: pointer; /* Show pointer cursor on hover */
 }
 
 .custom-block::before {

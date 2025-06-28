@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!-- <meta http-equiv="refresh" content="5" /> -->
@@ -17,6 +18,7 @@
 
     <!-- Mobile Friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=1024"> -->
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="IntenseCare | Compassionate In-Home Health Services" />
@@ -32,12 +34,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
 
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
-    <link href="css/intensecare-contactus.css" rel="stylesheet" />
-    <link href="css/intensecare-mobile" rel="stylesheet" />
+    <link href="css/intensecare-services" rel="stylesheet" />
 </head>
 
 <body>
@@ -45,12 +48,12 @@
         <div id="top-info-bar" class="top-info-bar">
             <div class="container d-flex justify-content-between align-items-center h-100">
                 <div class="text-white">
-                    <i class="bi-geo-alt-fill me-2 hide-on-mobile"></i> Kilburn SA 5084
+                    <i class="bi-geo-alt-fill me-2"></i> Kilburn SA 5084
                 </div>
                 <div class="d-flex align-items-center gap-3 text-white">
-                    <a href="#" class="text-white hide-on-mobile"><i class="bi-instagram hide-on-mobile"></i></a>
-                    <a href="#" class="text-white hide-on-mobile"><i class="bi-facebook hide-on-mobile"></i></a>
-                    <a href="#" class="text-white hide-on-mobile"><i class="bi-linkedin hide-on-mobile"></i></a>
+                    <a href="#" class="text-white"><i class="bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="bi-linkedin"></i></a>
                     <span><i class="bi-envelope-fill me-1"></i>
                         info@intensecare.com.au</span>
                     <span><i class="bi-telephone-fill me-1"></i> 1300 12 12 12</span>
@@ -76,7 +79,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#who_we_are">Who we are</a>
+                            <a class="nav-link click-scroll" href="who_we_are.html">Who we are</a>
                         </li>
 
                         <li class="nav-item">
@@ -84,123 +87,96 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#home">Get in touch</a>
+                            <a class="nav-link click-scroll" href="contactus.html">Get in touch</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <section class="hero-section d-flex justify-content-center align-items-center section-with-navbar-offset" id="home">
+        <section class="hero-section d-flex justify-content-center align-items-center section-with-navbar-offset"
+            id="what_we_offer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="hero-title mb-4">Get In Touch</h2>
+                        <h2 class="hero-title mb-4">Travel & Transport Assistance</h2>
                         <p class="hero-subtitle mb-5">
-                            Our professional team is ready to answer any questions you might have.
+                            Go places with ease - our transport service gets you to appointments, work, and social
+                            events on time.
                         </p>
+                        <div class="hero-buttons d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="#get_in_touch" class="btn custom-btn">Get In Touch</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section section-padding" id="section_5">
+        <section class="ndis-support-section section-padding" id="community_social_engagement">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
+                    <!-- Text first -->
+                    <div class="col-lg-6 col-12">
+                        <div class="ndis-support-info">
+                            <h2 class="ndis-combined-title mb-4">
+                                What is <span class="ndis-green">Travel & Transport Assistance</span>
+                            </h2>
 
-                    <div class="col-lg-5 col-12 mx-auto">
-                        <!-- <div class="col-lg-6 col-12 mx-auto"> -->
-                        <form class="custom-form contact-us-form bg-white shadow" action="#" method="post" role="form">
-
-                            <div class="form-body">
-                                <div class="input-group mb-4">
-                                    <input type="text" name="form-name" id="form-name" class="form-control"
-                                        aria-label="form-name" aria-describedby="basic-addon1" placeholder="Your Name"
-                                        required>
-
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <i class="custom-form-icon bi-person"></i>
-                                    </span>
-                                </div>
-
-                                <div class="input-group mb-4">
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                        class="form-control" placeholder="your@email.com" aria-label="form-email"
-                                        aria-describedby="basic-addon2" required="">
-
-                                    <span class="input-group-text" id="basic-addon2">
-                                        <i class="custom-form-icon bi-envelope"></i>
-                                    </span>
-                                </div>
-
-                                <div class="input-group mb-4">
-                                    <input type="tel" name="phone" id="email" pattern="[0-9]{10}" class="form-control"
-                                        placeholder="0XXX XXX XXX" aria-label="form-phone"
-                                        aria-describedby="basic-addon2" required="">
-
-                                    <span class="input-group-text" id="basic-addon3">
-                                        <i class="custom-form-icon bi-telephone"></i>
-                                    </span>
-                                </div>
-
-                                <div class="input-group mb-4">
-                                    <input type="text" name="form-query" id="form-query" class="form-control"
-                                        aria-label="form-query" aria-describedby="basic-addon1"
-                                        placeholder="What can we help you with?" required>
-
-                                    <span class="input-group-text" id="basic-addon4">
-                                        <i class="custom-form-icon bi-keyboard"></i>
-                                    </span>
-                                </div>
-
-                                <div class="col-lg-8 col-md-10 col-8 mx-auto">
-                                    <button type="submit" class="form-control">Send Email</button>
-                                </div>
-                            </div>
-                        </form>
+                            <p>
+                                It's reliable, accessible transport plus support so you travel safely and stress-free.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="col-lg-5 col-12 shadow contact-us-right-side mx-auto">
-                        <h2 class="mb-4" style="color: white;">Contact Us</h2>
-
-                        <p class="mb-2">
-                            <a href="tel: 1300121212" class="contact-phone bi-telephone">
-                                1300 12 12 12
-                            </a>
-                        </p>
-
-                        <p>
-                            <a href="mailto:info@intensecare.com.au" class="bi-envelope contact-link">
-                                info@intensecare.com.au
-                            </a>
-                        </p>
-
-                        <p class="mb-3">
-                            <i class="bi-geo-alt"></i>
-                            Killburn SA 5084
-                        </p>
-
-                        <ul class="social-icon mb-4">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-instagram"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-facebook"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-linkedin"></a>
-                            </li>
-                        </ul>
-
+                    <!-- Image second -->
+                    <div class="col-lg-6 col-12">
+                        <img src="images/website_assets/images/service_tile_5.jpg" class="img-fluid"
+                            alt="NDIS Support" />
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- <section class="contact-section section-padding" id="get_in_touch">
+        <section class="ndis-support-section section-padding" id="what_do_i_get" style="background-color: #f1ecf5;">
+            <div class="container">
+                <!-- Text first -->
+                <!-- What Do I Get section -->
+                <div class="what-i-get">
+                    <h2 class="what-i-get-title">
+                        What do <span class="highlight-i">I</span> get?
+                    </h2>
+                    <p class="what-i-get-subtitle">
+                        Safe, reliable rides and coaching for greater everyday mobility.
+                    </p>
+
+                    <ul class="what-i-get-list">
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Door-to-door Vehicles&nbsp;</strong> - wheelchair-friendly and comfortable.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Escort Assistance&nbsp;</strong> - help in and out, mobility aids handled.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Route and Schedule Planning&nbsp;</strong> - punctual pickups, zero hassles.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Public Transport Training&nbsp;</strong> - confidence using buses and trains.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Travel Tracking&nbsp;</strong> - clear records for your plan.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-section section-padding" id="get_in_touch">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-12 mx-auto">
@@ -210,15 +186,13 @@
                             &nbsp;
                             </br>
                             </br>
-                            <a href="#get_in_touch" class="btn custom-btn-white" style="padding:20px 100px">CONTACT
+                            <a href="contactus.html" class="btn custom-btn-white" style="padding:20px 100px">CONTACT
                                 US</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
-
-
+        </section>
         <!-- Footer Section -->
         <footer class="footer-section">
             <div class="container">
@@ -273,36 +247,15 @@
                 <p>All rights reserved and belong to IntenseCare Australia</p>
             </div>
         </footer>
-
     </main>
 
     <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <!-- <script src="js/click-scroll.js"></script> -->
     <script src="js/custom.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navbar = document.querySelector(".navbar");
-            const toggler = document.querySelector(".navbar-toggler");
-
-            // Scroll handler
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 20) {
-                    navbar.classList.add("is-scrolled");
-                } else {
-                    navbar.classList.remove("is-scrolled");
-                }
-            });
-
-            // Toggler expand handler
-            toggler.addEventListener("click", function () {
-                navbar.classList.toggle("expanded");
-            });
-        });
-    </script>
-
 </body>
 
 </html>
