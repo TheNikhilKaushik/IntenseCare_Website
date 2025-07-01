@@ -817,6 +817,72 @@ body.banner-hidden .top-info-bar {
 }
 
 /*---------------------------------------
+  REVIEW BLOCK              
+-----------------------------------------*/
+.review-block {
+  background-image: url('../images/website_assets/images/reviews.webp');
+  /* background-image: url('../images/website_assets/images/service_tile_1_compressed.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.review-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.review-block .avatar-image {
+  min-width: 60px;
+  margin: auto;
+  left: 0;
+}
+
+.review-block .bi-star {
+  color: var(--white-color);
+}
+
+.review-block .bi-star-fill {
+  color: var(--secondary-color);
+}
+
+.review-block-image-wrap {
+  background-color: var(--secondary-color);
+  border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  margin: auto;
+  padding: 25px 45px;
+}
+
+.review-block-info {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+}
+
+.review-block-info strong,
+.review-block-info p {
+  color: var(--white-color);
+}
+
+.review-block-info p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+}
+
+
+/*---------------------------------------
   NDIS Support Section            
 -----------------------------------------*/
 .ndis-combined-title {
