@@ -321,6 +321,19 @@ strong {
   padding: 10px 20px;
 }
 
+.custom-btn-white:hover,
+.custom-btn-white:active {
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius-large);
+  color: black;
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-light);
+  line-height: normal;
+  transition: all 0.3s;
+  padding: 10px 20px;
+}
+
 .custom-btn:hover {
   background: var(--custom-btn-bg-color);
   border-color: transparent;
@@ -503,7 +516,7 @@ body.banner-hidden .top-info-bar {
 .navbar-brand-icon {
   width: 100px;
   height: 100px;
-  background-image: url("../images/website_assets/images/IntenseCare_logo.svg");
+  background-image: url("../images/website_assets/images/IntenseCare_logo_edited.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -928,7 +941,7 @@ body.banner-hidden .top-info-bar {
   AUTHOR SECTION            
 -----------------------------------------*/
 .author-section {
-  background-image: url("../images/circle-scatter-haikei.png");
+  background-image: url("../images/circle-scatter-haikei-2.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
@@ -1089,7 +1102,7 @@ body.banner-hidden .top-info-bar {
 
 .footer-section p,
 .footer-section ul {
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   margin-bottom: 10px;
 }
@@ -1105,7 +1118,7 @@ body.banner-hidden .top-info-bar {
 
 .footer-section .social-icons a {
   display: inline-block;
-  font-size: 20px;
+  font-size: 30px;
   margin-right: 10px;
   color: #000;
   transition: color 0.3s ease;

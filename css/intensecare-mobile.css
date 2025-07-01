@@ -87,7 +87,7 @@
     .navbar-brand-icon {
       width: 30px;
       height: 30px;
-      background-image: url("../images/website_assets/images/IntenseCare_logo.svg");
+      background-image: url("../images/website_assets/images/IntenseCare_logo_edited.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -112,6 +112,10 @@
   }
 
   @media screen and (max-width: 768px) {
+    .visible-on-mobile {
+      display: none !important;
+    }
+
     .sticky-wrapper {
       top: 48px; /* same as height of .top-info-bar */
     }
@@ -120,6 +124,7 @@
 
 @media (max-width: 991px) and (orientation: landscape) {
   .custom-block {
+    margin-top: 2rem;
     padding-top: 10px;
     padding: 1rem 1rem;
     margin-bottom: 1rem;
@@ -127,7 +132,7 @@
   }
 
   .custom-block-info {
-    padding: 1rem 1rem 1rem;
+    padding: 3rem 1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 16px;
   }
@@ -142,8 +147,8 @@
   }
 
   .custom-block-image-wrap {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     /* margin: 0 auto; */
     background-size: cover;
     border-radius: 50%;
@@ -157,7 +162,7 @@
   .navbar-brand-icon {
     width: 30px;
     height: 30px;
-    background-image: url("../images/website_assets/images/IntenseCare_logo.svg");
+    background-image: url("../images/website_assets/images/IntenseCare_logo_edited.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -267,9 +272,9 @@
 
 @media screen and (max-width: 991px) {
   .navbar-brand-icon {
-    width: 30px;
-    height: 30px;
-    background-image: url("../images/website_assets/images/IntenseCare_logo.svg");
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/website_assets/images/IntenseCare_logo_edited.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -449,7 +454,7 @@
     }
 
     .custom-block-info {
-      padding: 1rem 1rem 1rem;
+      padding: 3rem 1rem 1rem;
       margin-bottom: 1rem;
       border-radius: 16px;
     }
@@ -464,8 +469,8 @@
     }
 
     .custom-block-image-wrap {
-      width: 80px;
-      height: 80px;
+      width: 120px;
+      height: 120px;
       /* margin: 0 auto; */
       background-size: cover;
       border-radius: 50%;
@@ -505,6 +510,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  #top-info-bar .d-flex a {
+    font-size: 10px;
+  }
+
   .hero-section {
     background-position: center center;
     /* min-height: 90vh; more height for small phones */
@@ -581,6 +590,7 @@
     z-index: 2;
     padding: 40px;
     background: var(--intense-care-color);
+    margin-top:20px;
   }
   .what-i-get-list li {
     font-size: 1.2rem;
@@ -633,9 +643,25 @@
   .ndis-support-info {
     margin-bottom: 30px;
   }
+  
 }
 
 .bi-telephone-fill .me-1 {
   display: inline-block;
   margin-right: 0.25rem;
+}
+
+/* For iPad Resolutions and similar */
+@media (min-width: 768px) {
+  .custom-block {
+    margin-top: 2rem;
+    padding-top: 10px;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+  }
+
+  .visible-on-mobile {
+    display: none !important;
+  }
 }
