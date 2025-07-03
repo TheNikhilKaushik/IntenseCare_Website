@@ -518,8 +518,9 @@ body.banner-hidden .top-info-bar {
 }
 
 .navbar-brand-icon {
-  width: 100px;
-  height: 100px;
+  /* margin-top: 20px; */
+  width: 50px;
+  height: 50px;
   background-image: url("../images/website_assets/images/IntenseCare_logo_edited.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -537,7 +538,7 @@ body.banner-hidden .top-info-bar {
 
 .navbar-expand-lg .navbar-nav .nav-link {
   border-radius: var(--border-radius-large);
-  margin: 10px;
+  margin: 30px;
   padding: 10px;
 }
 
@@ -820,8 +821,7 @@ body.banner-hidden .top-info-bar {
   REVIEW BLOCK              
 -----------------------------------------*/
 .review-block {
-  background-image: url('../images/website_assets/images/reviews.webp');
-  /* background-image: url('../images/website_assets/images/service_tile_1_compressed.jpg'); */
+  background-image: url('../images/website_assets/images/reviews.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

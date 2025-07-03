@@ -590,7 +590,7 @@
     z-index: 2;
     padding: 40px;
     background: var(--intense-care-color);
-    margin-top:20px;
+    margin-top: 20px;
   }
   .what-i-get-list li {
     font-size: 1.2rem;
@@ -643,7 +643,10 @@
   .ndis-support-info {
     margin-bottom: 30px;
   }
-  
+
+  .only-on-mobile {
+    font-size: 18px;
+  }
 }
 
 .bi-telephone-fill .me-1 {
@@ -659,6 +662,37 @@
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 16px;
+  }
+
+  .visible-on-mobile {
+    display: none !important;
+  }
+}
+
+.care-services-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.care-services-table td {
+  padding: 12px;
+  vertical-align: top;
+}
+
+.care-services-table .service-title {
+  font-weight: 600;
+  color: #1baa66;
+  width: 30%;
+}
+
+.care-services-table .service-desc {
+  width: 70%;
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .hide-on-mobile {
+    display: block !important;
   }
 
   .visible-on-mobile {

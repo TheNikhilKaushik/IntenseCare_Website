@@ -514,8 +514,8 @@ body.banner-hidden .top-info-bar {
 }
 
 .navbar-brand-icon {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-image: url("../images/website_assets/images/IntenseCare_logo_edited.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -533,7 +533,7 @@ body.banner-hidden .top-info-bar {
 
 .navbar-expand-lg .navbar-nav .nav-link {
   border-radius: var(--border-radius-large);
-  margin: 10px;
+  margin: 30px;
   padding: 10px;
 }
 
@@ -1245,9 +1245,4 @@ body.banner-hidden .top-info-bar {
   height: 35px;
   line-height: 36px;
   transition: background 0.2s, color 0.2s;
-}
-
-.social-icon-link:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
 }
