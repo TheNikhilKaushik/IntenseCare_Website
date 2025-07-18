@@ -106,8 +106,11 @@
                     <!-- https://formsubmit.co/19880fa5e1d03fd86c12aca2a1842736 -->
                     <div class="col-lg-5 col-12 mx-auto">
                         <!-- <div class="col-lg-6 col-12 mx-auto"> -->
-                        <form id="contact-form" class="custom-form contact-us-form bg-white shadow"
+                        <form class="custom-form contact-us-form bg-white shadow"
                             action="https://formsubmit.co/19880fa5e1d03fd86c12aca2a1842736" method="POST">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="true">
+                            <input type="hidden" name="_next" value="https://intensecare-website.pages.dev/thank-you.html">
 
                             <!-- Anti-spam honeypot -->
                             <input type="text" name="_formsubmit_id" style="display:none">
@@ -208,25 +211,6 @@
             </div>
         </section>
 
-        <!-- <section class="contact-section section-padding" id="get_in_touch">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-12 mx-auto">
-                        <div class="text-center mb-5">
-                            <h2 class="mb-1 contact-section-font-color">Need more details or support?</h2>
-                            <h2 class="mb-1 contact-section-font-color">Get in touch with us</h2>
-                            &nbsp;
-                            </br>
-                            </br>
-                            <a href="#get_in_touch" class="btn custom-btn-white" style="padding:20px 100px">CONTACT
-                                US</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-
         <!-- Footer Section -->
         <footer class="footer-section">
             <div class="container">
@@ -315,6 +299,18 @@
     <!-- <script src="js/click-scroll.js"></script> -->
     <script src="js/custom.js"></script>
     <script src="js/form-handler.js"></script>
+    <script>
+        // Show success message if form was just submitted
+        if (sessionStorage.getItem('formSubmitted') === 'true') {
+            const successDiv = document.getElementById("form-success-alert");
+            if (successDiv) {
+                successDiv.style.display = "block";
+                successDiv.textContent = "✅ Your message has been received. We will contact you soon.";
+                window.scrollTo({ top: successDiv.offsetTop - 100, behavior: 'smooth' });
+            }
+            sessionStorage.removeItem('formSubmitted'); // clear after showing once
+        }
+    </script>
 
 </body>
 
