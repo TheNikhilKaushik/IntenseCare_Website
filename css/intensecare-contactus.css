@@ -1024,7 +1024,7 @@ body.banner-hidden .top-info-bar {
   border-radius: var(--border-radius-medium);
   position: relative;
   z-index: 2;
-  padding: 50px;
+  padding: 30px;
 }
 
 .visible-on-mobile {
