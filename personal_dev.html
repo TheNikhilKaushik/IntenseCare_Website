@@ -18,6 +18,7 @@
 
     <!-- Mobile Friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=1024"> -->
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="IntenseCare | Compassionate In-Home Health Services" />
@@ -33,11 +34,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
 
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
-    <link href="css/intensecare-landing.css" rel="stylesheet" />
+    <link href="css/intensecare-services.css" rel="stylesheet" />
     <link href="css/intensecare-mobile.css" rel="stylesheet" />
 </head>
 
@@ -49,9 +52,11 @@
                     <i class="bi-geo-alt-fill me-2"></i> Kilburn SA 5084
                 </div>
                 <div class="d-flex align-items-center gap-3 text-white">
-                    <a href="https://www.instagram.com/_intensecare_/" class="text-white hide-on-mobile" target="_blank"><i class="bi-instagram hide-on-mobile"></i></a>
+                    <a href="https://www.instagram.com/_intensecare_/" class="text-white hide-on-mobile" target="_blank"><i
+                            class="bi-instagram hide-on-mobile"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61579101674760" class="text-white hide-on-mobile" target="_blank"><i class="bi-facebook hide-on-mobile"></i></a>
-                    <a href="https://www.linkedin.com/in/intensecare-disability-support-services-088563361" class="text-white hide-on-mobile"><i class="bi-linkedin hide-on-mobile"></i></a>
+                    <a href="https://www.linkedin.com/in/intensecare-disability-support-services-088563361"
+                        class="text-white hide-on-mobile"><i class="bi-linkedin hide-on-mobile"></i></a>
                     <a href="mailto:info@intensecare.com.au" class="text-white hide-on-mobile">
                         <i class="bi-envelope-fill me-1"></i> info@intensecare.com.au
                     </a>
@@ -61,7 +66,6 @@
                 </div>
             </div>
         </div>
-
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -76,10 +80,10 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-lg-auto me-lg-4">
-                        <a class="nav-link nav-item" href="#home">Home</a>
-                        <a class="nav-link nav-item" href="who_we_are.html">Who we are</a>
-                        <a class="nav-link nav-item" href="what_we_offer.html">What we offer</a>
-                        <a class="nav-link nav-item" href="contactus.html">Get in touch</a>
+                        <a class="nav-link nav-item click-scroll" href="index.html">Home</a>
+                        <a class="nav-link nav-item click-scroll" href="who_we_are.html">Who we are</a>
+                        <a class="nav-link nav-item click-scroll" href="what_we_offer.html">What we offer</a>
+                        <a class="nav-link nav-item click-scroll" href="contactus.html">Get in touch</a>
                         <a></a>
                     </ul>
                 </div>
@@ -87,200 +91,106 @@
         </nav>
 
         <section class="hero-section d-flex justify-content-center align-items-center section-with-navbar-offset"
-            id="home">
+            id="what_we_offer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="hero-title mb-4">At Intense Care</h2>
+                        <h2 class="hero-title mb-4">Personal Development & Capacity Building</h2>
                         <p class="hero-subtitle mb-5">
-                            We empower individuals with disabilities to lead a fulfilling life through a
-                            personalized approach that recognizes their unique strengths and aspirations.
+                            Grow your skills - our programs build confidence, independence, and future opportunities.
                         </p>
                         <div class="hero-buttons d-flex justify-content-center gap-3 flex-wrap">
-                            <a href="contactus.html" class="btn custom-btn">Get In Touch</a>
-                            <a href="what_we_offer.html" class="btn custom-btn">Our Services</a>
+                            <a href="#get_in_touch" class="btn custom-btn">Get In Touch</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="ndis-support-section section-padding" id="who_we_are">
+        <section class="ndis-support-section section-padding" id="community_social_engagement">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Text first -->
                     <div class="col-lg-6 col-12">
                         <div class="ndis-support-info">
                             <h2 class="ndis-combined-title mb-4">
-                                <span class="ndis-green">NDIS</span> Support Provider
+                                What is <span class="ndis-green">Personal Development and Capacity Building</span>
                             </h2>
 
                             <p>
-                                IntenseCare is a NDIS (National Disability Insurance Scheme) support provider, providing
-                                disability services in South Australia to all NDIS participants.
-                            </p>
-                            <p>
-                                We ensure that all of your care needs are satisfied by providing compassionate, skilled,
-                                and committed care. Our company was built on the principles of our enthusiasm for
-                                helping those in need.
+                                It's coaching and training tailored to your goals, boosting life, work, and social
+                                skills.
                             </p>
                         </div>
                     </div>
 
                     <!-- Image second -->
                     <div class="col-lg-6 col-12">
-                        <img src="images/website_assets/images/service_tile_1.jpg" class="img-fluid"
+                        <img src="images/website_assets/images/service_tile_2.jpg" class="img-fluid"
                             alt="NDIS Support" />
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="news-section section-padding" id="news-section">
+        <section class="ndis-support-section section-padding" id="what_do_i_get" style="background-color: #f1ecf5;">
             <div class="container">
-                <div class="col-lg-12 col-12 text-center mb-5">
-                    <h2 class="news-combined-title mb-4">
-                        Our latest <span class="ndis-green">news</span>
+                <!-- Text first -->
+                <!-- What Do I Get section -->
+                <div class="what-i-get">
+                    <h2 class="what-i-get-title">
+                        What do <span class="highlight-i">I</span> get?
                     </h2>
-                    <h4 class="news-description mb-5">
-                        Stay up to date with IntenseCare—service updates, community events, and inspiring client
-                        stories,
-                        all in one place.
-                    </h4>
-                </div>
+                    <p class="what-i-get-subtitle">
+                        Coaching and workshops that build everyday abilities and future opportunities.
+                    </p>
 
-                <div class="news-grid align-items-center    ">
-
-                    <!-- Block 1 -->
-                    <a href="what_we_offer.html" class="custom-block-link">
-                        <div class="custom-block">
-                            <div class="custom-block-image-wrap"
-                                style="background-image: url('images/website_assets/images/tiles/service_tile_6.jpg');">
-                            </div>
-
-                            <div class="custom-block-info">
-                                <div class="text-center mt-3">
-                                    <strong class="d-block text-white">Celebrating a Life Well Lived</strong>
-                                </div>
-                                <p class="mb-0">
-                                    A heartfelt tribute sharing one client's journey, milestones, and the joys that made
-                                    their life truly meaningful.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <span class="custom-block-separator visible-on-mobile"></span>
-
-                    <!-- Block 2 -->
-                    <a href="what_we_offer.html" class="custom-block-link">
-                        <div class="custom-block">
-                            <div class="custom-block-image-wrap"
-                                style="background-image: url('images/website_assets/images/tiles/service_tile_5.jpg');">
-                            </div>
-
-                            <div class="custom-block-info">
-                                <div class="text-center mt-3">
-                                    <strong class="d-block text-white">My Life, My Job, and My Career</strong>
-                                </div>
-                                <p class="mb-0">
-                                    Practical insights on balancing personal goals with work, plus career-building tips
-                                    for
-                                    NDIS participants and carers alike.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <span class="custom-block-separator visible-on-mobile"></span>
-
-                    <!-- Block 3 -->
-                    <a href="what_we_offer.html" class="custom-block-link">
-                        <div class="custom-block">
-                            <div class="custom-block-image-wrap"
-                                style="background-image: url('images/website_assets/images/tiles/service_tile_2.jpg');">
-                            </div>
-
-                            <div class="custom-block-info">
-                                <div class="text-center mt-3"><strong class="d-block text-white">Navigating Life
-                                        When Things Get Hard</strong>
-                                </div>
-                                <p class="mb-0">
-                                    Simple strategies, support options, and real stories to help you stay resilient
-                                    during
-                                    life’s toughest moments.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                </div> <!-- end .news-grid -->
-            </div>
-        </section>
-
-        <section class="reviews-section section-padding" id="section_4">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 text-center mb-5">
-                        <h2 class="news-combined-title mb-4">Reviews</h2>
-                    </div>
-
-                    <div class="col-lg-4 col-12">
-                        <div class="review-block d-flex flex-wrap text-center">
-                            <div class="review-block-info">
-                                <div class="reviews-group mb-3">
-                                    <strong class="d-block text-white">Elizabeth</strong>
-                                    <strong>5</strong>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                </div>
-
-                                <p class="mb-0">Professional, responsive, and always going the extra mile — their team
-                                    has been a game-changer for my daily care needs.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-12 my-5 my-lg-0">
-                        <div class="review-block d-flex flex-wrap text-center">
-                            <div class="review-block-info">
-                                <div class="reviews-group mb-3">
-                                    <strong class="d-block text-white">Jenna</strong>
-                                    <strong>5</strong>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                </div>
-
-                                <p class="mb-0">Exceptional support staff who genuinely care — they’ve made navigating
-                                    the NDIS process so much easier for our family.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-12">
-                        <div class="review-block d-flex flex-wrap text-center">
-                            <div class="review-block-info">
-                                <div class="reviews-group mb-3">
-                                    <strong class="d-block text-white">Donna</strong>
-                                    <strong>5</strong>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                </div>
-
-                                <p class="mb-0">From the first consultation to ongoing support, their service has been
-                                    nothing short of outstanding.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="what-i-get-list hide-on-mobile">
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Goal-settings Sessionsg&nbsp;</strong> - one-on-one mentoring.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Live-skills Workshops&nbsp;</strong> - budgeting, cooking, time management.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Communication Coaching&nbsp;</strong> - social and workplace interaction.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Employment Readiness&nbsp;</strong> - resume, interview, and volunteering prep.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-lg check-icon"></i>
+                            <strong>Progres Reviews&nbsp;</strong> - adaptive plans that evolve with you.
+                        </li>
+                    </ul>
+                    <table class="care-services-table visible-on-mobile">
+                        <tbody>
+                            <tr>
+                                <td class="service-title">Goal-setting Sessions</td>
+                                <td class="service-desc">one-on-one mentoring.</td>
+                            </tr>
+                            <tr>
+                                <td class="service-title">Life-skills Workshops</td>
+                                <td class="service-desc">budgeting, cooking, time management.</td>
+                            </tr>
+                            <tr>
+                                <td class="service-title">Communication Coaching</td>
+                                <td class="service-desc">social and workplace interaction.</td>
+                            </tr>
+                            <tr>
+                                <td class="service-title">Employment Readiness</td>
+                                <td class="service-desc">resume, interview, and volunteering prep.</td>
+                            </tr>
+                            <tr>
+                                <td class="service-title">Progress Reviews</td>
+                                <td class="service-desc">adaptive plans that evolve with you.</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </div>
             </div>
@@ -304,8 +214,6 @@
                 </div>
             </div>
         </section>
-
-
         <!-- Footer Section -->
         <footer class="footer-section">
             <div class="container">
@@ -372,6 +280,7 @@
                         </div>
                     </div>
 
+
                     <!-- Column 5 -->
                     <div class="col-lg-2 col-md-6">
                         <h5>Official Info</h5>
@@ -383,13 +292,14 @@
                 <p>All rights reserved and belong to IntenseCare Australia</p>
             </div>
         </footer>
-
     </main>
 
     <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
+    <!-- <script src="js/click-scroll.js"></script> -->
     <script src="js/custom.js"></script>
 </body>
 
